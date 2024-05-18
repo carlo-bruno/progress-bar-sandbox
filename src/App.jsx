@@ -1,10 +1,10 @@
 import "./App.css";
 import GridSpanInterval from "./ProgressBar/GridSpanInterval";
 import GrowingBarIncrement from "./ProgressBar/GrowingBarIncrement";
-import GrowingBarPause from "./ProgressBar/GrowingBarPause";
 import GrowingBarPercent from "./ProgressBar/GrowingBarPercent";
 import IncrementBar from "./ProgressBar/IncrementBar";
 import IncrementBarInterval from "./ProgressBar/IncrementBarInterval";
+import LinearLogarithmic from "./ProgressBar/LinearLogarithmic";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <GridSpanInterval />
       <GrowingBarIncrement />
       <GrowingBarPercent />
-      <GrowingBarPause />
+      <LinearLogarithmic />
     </>
   );
 }

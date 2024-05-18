@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./common-styles.css";
 import { INTERVAL_TIME } from "./constants";
 
-const GrowingBarPause = () => {
+const LinearLogarithmic = () => {
   const MAX_PERCENT = 100;
   const [progress, setProgress] = useState(0);
   let intervalRef = useRef(null);
@@ -82,4 +82,4 @@ const GrowingBarPause = () => {
   );
 };
 
-export default GrowingBarPause;
+export default LinearLogarithmic;
