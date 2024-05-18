@@ -37,6 +37,9 @@ const GrowingBarIncrement = () => {
 
   return (
     <main className="progressBar-main">
+      <h3>
+        1 <code>{"<div>"}</code> that grows 10% increments
+      </h3>
       <div className="grow-container">
         <div className="grow-box" style={{ width: `${progress * 10}%` }}></div>
         <div className="grow-overlay">

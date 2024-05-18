@@ -23,6 +23,9 @@ const IncrementBar = () => {
 
   return (
     <main className="progressBar-main">
+      <h3>
+        Increment Bar, 10 <code>{"<div>"}</code>&apos;s
+      </h3>
       <div className="progressBar-grid">
         {progressArr.map((val, i) => (
           <div className={`box ${val ? "green" : ""}`} key={i}>

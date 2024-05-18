@@ -37,6 +37,9 @@ const GridSpanInterval = () => {
 
   return (
     <main className="progressBar-main">
+      <h3>
+        Grid & 1 <code>{"<div>"}</code> that spans 10 columns
+      </h3>
       <div className="progressBar-grid box">
         <div
           className={` ${progress > 0 ? "green" : ""}`}

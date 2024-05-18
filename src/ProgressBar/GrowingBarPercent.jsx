@@ -21,7 +21,7 @@ const GrowingBarPercent = () => {
 
   const handleProgressButton = () => {
     if (intervalRef.current === null && progress < MAX_PERCENT) {
-      intervalRef.current = setInterval(incrementProgress, INTERVAL_TIME / 4);
+      intervalRef.current = setInterval(incrementProgress, INTERVAL_TIME / 10);
     }
     return () => clearInterval(intervalRef.current);
   };
@@ -38,13 +38,15 @@ const GrowingBarPercent = () => {
 
   return (
     <main className="progressBar-main">
+      <h3>
+        1 <code>{"<div>"}</code> that grows 1% increments
+      </h3>
       <div className="grow-container">
         <div className="grow-box" style={{ width: `${progress}%` }}></div>
         <div className="grow-overlay">
           <p>{progress}%</p>
         </div>
       </div>
-
       <div className="progressBar-buttons">
         <button onClick={handleProgressButton}> Start </button>
         <button onClick={handleResetButton}> Reset </button>

@@ -43,6 +43,7 @@ const IncrementBarInterval = () => {
 
   return (
     <main className="progressBar-main">
+      <h3>Incremental Progress Bar with Interval</h3>
       <div className="progressBar-grid">
         {progressArr.map((val, i) => (
           <div className={`box ${val ? "green" : ""}`} key={i}>
