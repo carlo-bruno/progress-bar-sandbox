@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.progressBar-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 90vw;
+  height: 10rem;
+  border: 2px solid #1a1a1a;
+  background-color: #333;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+
+.progressBar-grid {
+  width: 100%;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 2px;
+
+  transition: 0.2s;
+}
+
+.box {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px dashed green;
+  transition: all 0.2s ease-in allow-discrete;
+}
+
+.green {
+  background-color: green;
+  grid-row: 1;
+}
+
+.progress-overlay {
+  padding: 0;
+  margin: auto;
+  background-color: transparent;
+  grid-row: 1;
+  grid-column: 1 / span 10;
+}
+
+/* Growing Bar */
+.grow-container {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  border: 1px dashed green;
+}
+
+.grow-box {
+  height: 100%;
+  width: 0;
+  background-color: green;
+  transition: all 0.2s linear allow-discrete;
+}
+
+.grow-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.grow-overlay > * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons */
+.progressBar-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.progressBar-buttons > button {
+  width: 50%;
+}
