@@ -21,7 +21,7 @@
 
 .progressBar-grid {
   width: 100%;
-  height: 2rem;
+  height: 1.8rem;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   column-gap: 2px;
@@ -52,7 +52,7 @@
 /* Growing Bar */
 .grow-container {
   width: 100%;
-  height: 2rem;
+  height: 1.8rem;
   display: flex;
   flex-direction: row;
 
